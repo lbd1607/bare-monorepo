@@ -1,0 +1,9 @@
+type Query {
+  _empty: String
+}
+
+type Message {
+  id: ID!
+  user: String!
+  content: String!
+}
