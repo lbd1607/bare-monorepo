@@ -7,3 +7,7 @@ type Message {
   user: String!
   content: String!
 }
+
+extend type Query {
+  messages: [Message!]
+}

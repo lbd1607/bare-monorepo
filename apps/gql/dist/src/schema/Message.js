@@ -1,5 +1,5 @@
 import gql from "graphql-tag";
-import { messages } from "../../dist/data/Messages.js";
+import { messages } from "../data/Messages.js";
 export const typeDefs = gql `
   extend type Query {
     messages: [Message!]
