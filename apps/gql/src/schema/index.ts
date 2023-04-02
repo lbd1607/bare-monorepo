@@ -3,7 +3,7 @@ import { makeExecutableSchema } from "@graphql-tools/schema";
 import {
   typeDefs as MessageTypeDefs,
   resolvers as MessageResolvers,
-} from "../../dist/schema/Message.js";
+} from "./Message.js";
 
 const Query = gql`
   type Query {
