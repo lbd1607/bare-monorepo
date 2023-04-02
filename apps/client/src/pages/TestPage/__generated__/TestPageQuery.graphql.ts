@@ -1,5 +1,5 @@
 /**
- * @generated SignedSource<<335da9b6024c09fe9cc70791e6509f21>>
+ * @generated SignedSource<<4fd066f711e697c74bcacec729522a26>>
  * @lightSyntaxTransform
  * @nogrep
  */
@@ -8,7 +8,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { ClientRequest, ClientQuery } from 'relay-runtime';
+import { ConcreteRequest, Query } from 'relay-runtime';
 export type TestPageQuery$variables = {};
 export type TestPageQuery$data = {
   readonly messages: ReadonlyArray<{
@@ -22,44 +22,39 @@ export type TestPageQuery = {
   variables: TestPageQuery$variables;
 };
 
-const node: ClientRequest = (function(){
+const node: ConcreteRequest = (function(){
 var v0 = [
   {
-    "kind": "ClientExtension",
+    "alias": null,
+    "args": null,
+    "concreteType": "Message",
+    "kind": "LinkedField",
+    "name": "messages",
+    "plural": true,
     "selections": [
       {
         "alias": null,
         "args": null,
-        "concreteType": "Message",
-        "kind": "LinkedField",
-        "name": "messages",
-        "plural": true,
-        "selections": [
-          {
-            "alias": null,
-            "args": null,
-            "kind": "ScalarField",
-            "name": "id",
-            "storageKey": null
-          },
-          {
-            "alias": null,
-            "args": null,
-            "kind": "ScalarField",
-            "name": "user",
-            "storageKey": null
-          },
-          {
-            "alias": null,
-            "args": null,
-            "kind": "ScalarField",
-            "name": "content",
-            "storageKey": null
-          }
-        ],
+        "kind": "ScalarField",
+        "name": "id",
+        "storageKey": null
+      },
+      {
+        "alias": null,
+        "args": null,
+        "kind": "ScalarField",
+        "name": "user",
+        "storageKey": null
+      },
+      {
+        "alias": null,
+        "args": null,
+        "kind": "ScalarField",
+        "name": "content",
         "storageKey": null
       }
-    ]
+    ],
+    "storageKey": null
   }
 ];
 return {
@@ -80,12 +75,12 @@ return {
     "selections": (v0/*: any*/)
   },
   "params": {
-    "cacheID": "0a44bcb7bac3a303aa4d5d1a0126ffe2",
+    "cacheID": "49f3bafa348c71822b37d996a627c3f8",
     "id": null,
     "metadata": {},
     "name": "TestPageQuery",
     "operationKind": "query",
-    "text": null
+    "text": "query TestPageQuery {\n  messages {\n    id\n    user\n    content\n  }\n}\n"
   }
 };
 })();

@@ -9,3 +9,6 @@ generates:
       - "typescript-resolvers"
     config:
       useIndexSignature: true
+  ./src/schema/schema.graphql:
+    plugins:
+      - "schema-ast"

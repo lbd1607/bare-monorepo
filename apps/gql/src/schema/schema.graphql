@@ -1,13 +1,10 @@
-type Query {
-  _empty: String
-}
-
 type Message {
+  content: String!
   id: ID!
   user: String!
-  content: String!
 }
 
-extend type Query {
+type Query {
+  _empty: String
   messages: [Message!]
 }
