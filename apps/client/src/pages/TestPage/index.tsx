@@ -19,14 +19,19 @@ const TestPage = () => {
   return (
     <div>
       <h1>Test page</h1>
-      <div>
+      <div
+        style={{
+          display: "grid",
+          justifyContent: "center",
+        }}
+      >
         Data:
         {data?.messages?.map((message) => (
-          <ul key={message.id}>
-            <li>{message.id}</li>
-            <li>{message.user}</li>
-            <li>{message.content}</li>
-          </ul>
+          <p key={message.id}>
+            <p>ID: {message.id}</p>
+            <p>User: {message.user}</p>
+            <p>Content: {message.content}</p>
+          </p>
         ))}
       </div>
     </div>
